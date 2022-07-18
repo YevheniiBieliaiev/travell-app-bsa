@@ -1,0 +1,56 @@
+@import '../../styles/scss-variables/variables.scss';
+@import '../../styles/common/trip-price.module.scss';
+@import '../../styles/common/button.module.scss';
+
+.trip__card {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  background-color: $color-white;
+  border-radius: 1px;
+  box-shadow: $shadow;
+  img {
+    height: 100%;
+  }
+}
+
+.trip__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 30px;
+}
+
+.trip__info {
+  width: 100%;
+  max-width: 300px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $color-gray;
+}
+
+.trip__info__title {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: $font-size-400;
+  font-family: 'Playfair Display', serif;
+}
+
+.trip__info__content {
+  display: flex;
+  font-weight: 300;
+}
+
+.trip__info__duration {
+  min-width: 120px;
+  padding-left: 25px;
+  background-image: url('../../../images/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 15px;
+}
+
+.trip__info__level::before {
+  content: '•';
+  margin-right: 10px;
+  color: $color-blue-200;
+}

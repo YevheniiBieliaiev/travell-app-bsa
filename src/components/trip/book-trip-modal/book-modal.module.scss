@@ -1,0 +1,60 @@
+@import '../../styles/scss-variables/variables.scss';
+@import '../trip-info.module.scss';
+@import '../../styles/common/input.module.scss';
+
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background-color: $overlay-color;
+}
+
+.trip__popup {
+  position: relative;
+  flex: 1;
+  max-width: 380px;
+  padding: 25px 40px 30px;
+  background-color: $color-white;
+  box-shadow: $shadow;
+}
+
+.trip__popup__close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  padding: 0;
+  font-weight: 300;
+  font-size: $font-size-400;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.trip__popup__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.trip__popup__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: 1px solid $color-gray;
+}
+
+.trip__popup__total__value {
+  font-weight: 600;
+  font-size: $font-size-400;
+}

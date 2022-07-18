@@ -1,0 +1,24 @@
+@import '../styles/scss-variables/variables.scss';
+
+.footer {
+  padding: 30px 20px;
+  color: $color-white;
+  text-align: center;
+  background-color: $color-blue-400;
+  .footer__text {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    .footer__link {
+      color: $color-blue-200;
+      text-decoration: none;
+      transition: 0.1s color ease;
+      &:hover {
+        color: $color-blue-300;
+      }
+    }
+    .footer__icon {
+      width: 16px;
+    }
+  }
+}

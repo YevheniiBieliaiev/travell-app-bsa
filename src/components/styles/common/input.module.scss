@@ -1,0 +1,29 @@
+@import '../scss-variables/variables.scss';
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input__heading {
+  font-size: $font-size-100;
+  line-height: 1;
+}
+
+.input input {
+  min-width: 160px;
+  min-height: 45px;
+  padding: 10px 15px;
+  font-size: $font-size-300;
+  background-color: $color-blue-100;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.input input::placeholder {
+  color: $color-blue-400;
+  opacity: 0.4;
+}

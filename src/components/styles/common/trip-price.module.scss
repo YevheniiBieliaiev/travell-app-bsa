@@ -1,0 +1,8 @@
+@import '../scss-variables/variables.scss';
+
+.trip__price__value {
+  display: block;
+  color: $color-blue-200;
+  font-size: $font-size-600;
+  line-height: 1;
+}

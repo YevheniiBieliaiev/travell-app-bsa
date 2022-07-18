@@ -1,0 +1,35 @@
+@import '../styles/scss-variables/variables.scss';
+@import '../styles/common/hidden-elem.module.scss';
+@import '../styles/common/select.module.scss';
+@import '../styles/common/input.module.scss';
+
+.trips__filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  padding: 20px;
+  background-color: $color-blue-400;
+}
+
+.trips__filter__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 25px;
+  width: 100%;
+  max-width: $container-width;
+}
+
+.trips__filter__search {
+  width: 100%;
+  max-width: 350px;
+}
+
+.trips__filter__search input {
+  padding-left: 50px;
+  background-color: $color-white;
+  background-image: url('../../images/search.svg');
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  background-size: 22px;
+}

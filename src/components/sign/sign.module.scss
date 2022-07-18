@@ -1,0 +1,39 @@
+@import '../styles/scss-variables/variables.scss';
+@import '../styles/common/hidden-elem.module.scss';
+@import '../styles/common/input.module.scss';
+@import '../styles/common/button.module.scss';
+
+.sign__up__page,
+.sign__in__page {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.signup__form,
+.signin__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 340px;
+  margin-bottom: 30px;
+}
+
+.signup__form__title,
+.signin__form__title {
+  margin: 0 0 20px;
+  font-size: $font-size-400;
+  text-align: center;
+}
+
+.signup__form__link,
+.signin__form__link {
+  color: $color-blue-200;
+  transition: 0.1s color ease;
+}
+
+.signup__form__link:hover,
+.signin__form__link:hover {
+  color: $color-blue-300;
+}

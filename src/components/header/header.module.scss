@@ -1,0 +1,22 @@
+@import '../styles/scss-variables/variables.scss';
+
+.header {
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid $color-gray;
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $container-width;
+    margin: 0 auto;
+    .header__logo {
+      margin: 0;
+      color: $color-blue-400;
+      font-weight: 600;
+      font-size: $font-size-500;
+      font-family: 'Playfair Display', serif;
+      text-decoration: none;
+    }
+  }
+}

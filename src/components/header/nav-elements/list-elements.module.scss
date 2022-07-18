@@ -1,0 +1,59 @@
+@import '../../styles/scss-variables/variables.scss';
+@import '../../styles/common/hidden-elem.module.scss';
+@import '../../styles/common/button.module.scss';
+
+
+.nav__header__item {
+  border-left: 1px solid $color-gray;
+  .nav__header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80px;
+    height: 100%;
+  }
+}
+
+.profile__nav {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile__nav:hover .profile__nav__list,
+.profile__nav:focus .profile__nav__list,
+.profile__nav__list:focus-within .profile__nav__list {
+  display: block;
+}
+
+.profile__nav__list {
+  position: absolute;
+  top: 90%;
+  right: 15px;
+  z-index: 5;
+  display: none;
+  min-width: 150px;
+  padding: 0;
+  list-style: none;
+  background-color: $color-white;
+  border-radius: 1px;
+  box-shadow: $shadow;
+}
+
+.profile__nav__item {
+  padding: 0 10px 10px;
+  text-align: center;
+}
+
+.profile__nav__item:first-child {
+  padding-top: 10px;
+}
+
+.profile__nav__sign__out,
+.profile__nav__sign__in,
+.profile__nav__sign__up {
+  min-height: auto;
+}
+
+.profile-nav__username {
+  font-weight: bold;
+}
